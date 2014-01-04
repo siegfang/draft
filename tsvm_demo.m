@@ -1,4 +1,3 @@
-
 load fisheriris                     
 data = [meas(:,1), meas(:,2)];            % Load Data
 groups = ismember(species,'setosa');      % the labels of data
@@ -50,17 +49,18 @@ cp.CorrectRate
 
 % please be unannoted when you find code above output wrong result
 % 逐步测试程序
-for i = 1:size(testData, 1)
-    hold on
-    plot(testData(i,1), testData(i,2), 'b*')
-    line(trainData(ned(i,:),1),trainData(ned(i,:),2),'color',[.5 .5 .5],'marker','o',...
-         'linestyle','none','markersize',10);
-    if knnClasses(i) == 1
-        plot(testData(i,1), testData(i,2), 'mO');
-    else
-        plot(testData(i,1), testData(i,2), 'c+');
-    end
-end
+% for i = 1:size(testData, 1)
+%     hold on
+%     plot(testData(i,1), testData(i,2), 'b*')
+%     line(trainData(ned(i,:),1),trainData(ned(i,:),2),'color',[.5 .5 .5],'marker','o',...
+%          'linestyle','none','markersize',10);
+%     if knnClasses(i) == 1
+%         plot(testData(i,1), testData(i,2), 'mO');
+%     else
+%         plot(testData(i,1), testData(i,2), 'c+');
+%     end
+% end
+
 
 %========== Less Training instance and More Test instance =================
 % repartition the data for transductive method
