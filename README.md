@@ -1,4 +1,4 @@
-ml
+实用工具
 ==
 
-some machine learning algorithm implementation
+一些机器学习算法、文本预处理等常用代码。
