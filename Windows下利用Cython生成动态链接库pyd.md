@@ -1,6 +1,5 @@
 # Windows下利用Cython生成动态链接库pyd
 
----
 
 pyd在Windows下其实就是dll。如果已经有C文件，可以使用微软开发的Visual Studio系列开发环境（IDE）来编译生成。不同的版本的设置位置可能不同，但所要设置的项目都是一样的：
 
