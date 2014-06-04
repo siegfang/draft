@@ -1,4 +1,4 @@
-Python下常常会遇到各种编码问题，直到看了这篇(博文)[http://blog.csdn.net/a657941877/article/details/9063883]才算闹明白。执行以下代码时：
+Python下常常会遇到各种编码问题，直到看了这篇[博文](http://blog.csdn.net/a657941877/article/details/9063883)才算闹明白。执行以下代码时：
 ```Python
 s = '中文'  # 注意这里的 str 是 str 类型的，而不是 unicode   
 s.encode('gb18030')
