@@ -12,3 +12,15 @@ UnicodeDecodeError: 'ascii' codec can't decode byte ... in position
 s.decode('utf-8')
 ```
 
+Java下输出XML时遇到错误：
+```Java
+javax.xml.transform.TransformerException: java.io.IOException: Detected invalid substitute UTF-16: xxxx xx ?
+```
+可能的解决办法是将字符串转换为utf-8：
+```Java
+try {
+    res = new String(res.getBytes(),"utf8");
+} catch (UnsupportedEncodingException e) {
+    e.printStackTrace();
+}
+```
